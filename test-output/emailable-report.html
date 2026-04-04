@@ -8,122 +8,19 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">89,891</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,017</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.aurazone.aurazone_automations.EndToEndPurchaseTest</td><td><a href="#m0">fillDeliveryAddress</a></td><td rowspan="1">1775335987643</td><td rowspan="1">102</td></tr><tr class="failedeven"><td><a href="#m1">placeOrder</a></td><td rowspan="1">1775335987752</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m2">proceedToCheckout</a></td><td rowspan="1">1775335969379</td><td rowspan="1">18262</td></tr><tr class="failedeven"><td><a href="#m3">selectCashOnDelivery</a></td><td rowspan="1">1775335987746</td><td rowspan="1">4</td></tr><tr class="failedodd"><td rowspan="1">com.aurazone.aurazone_automations.InvalidPriceFilterTest</td><td><a href="#m4">test_InvalidPriceRange_FilterShouldNotApply</a></td><td rowspan="1">1775335927200</td><td rowspan="1">21705</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.aurazone.aurazone_automations.EndToEndPurchaseTest</td><td><a href="#m5">addToCart</a></td><td rowspan="1">1775335968684</td><td rowspan="1">290</td></tr><tr class="passedeven"><td><a href="#m6">goToCart</a></td><td rowspan="1">1775335968975</td><td rowspan="1">402</td></tr><tr class="passedeven"><td><a href="#m7">navigateToProductsPage</a></td><td rowspan="1">1775335966431</td><td rowspan="1">884</td></tr><tr class="passedeven"><td><a href="#m8">selectProduct</a></td><td rowspan="1">1775335967318</td><td rowspan="1">1364</td></tr><tr class="passedeven"><td><a href="#m9">verifyHomepageLoads</a></td><td rowspan="1">1775335966047</td><td rowspan="1">383</td></tr><tr class="passedodd"><td rowspan="2">com.aurazone.aurazone_automations.ForgotPasswordNegativeTest</td><td><a href="#m10">testEmptyEmailForgotPassword</a></td><td rowspan="1">1775335959668</td><td rowspan="1">3160</td></tr><tr class="passedodd"><td><a href="#m11">testInvalidEmailForgotPassword</a></td><td rowspan="1">1775335952699</td><td rowspan="1">2686</td></tr><tr class="passedeven"><td rowspan="3">com.aurazone.aurazone_automations.LoginTest</td><td><a href="#m12">testLoginWithInvalidPassword</a></td><td rowspan="1">1775335903159</td><td rowspan="1">3766</td></tr><tr class="passedeven"><td><a href="#m13">testLoginWithUnverifiedAccount</a></td><td rowspan="1">1775335920591</td><td rowspan="1">2657</td></tr><tr class="passedeven"><td><a href="#m14">testLoginWithverifiedAccount</a></td><td rowspan="1">1775335911601</td><td rowspan="1">3282</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.aurazone.aurazone_automations.EndToEndPurchaseTest</td><td><a href="#m0">addToCart</a></td><td rowspan="1">1775338728244</td><td rowspan="1">412</td></tr><tr class="passedeven"><td><a href="#m1">fillDeliveryAddress</a></td><td rowspan="1">1775338731869</td><td rowspan="1">1555</td></tr><tr class="passedeven"><td><a href="#m2">goToCart</a></td><td rowspan="1">1775338728659</td><td rowspan="1">527</td></tr><tr class="passedeven"><td><a href="#m3">navigateToProductsPage</a></td><td rowspan="1">1775338724969</td><td rowspan="1">826</td></tr><tr class="passedeven"><td><a href="#m4">placeOrder</a></td><td rowspan="1">1775338733849</td><td rowspan="1">405</td></tr><tr class="passedeven"><td><a href="#m5">proceedToCheckout</a></td><td rowspan="1">1775338729188</td><td rowspan="1">2679</td></tr><tr class="passedeven"><td><a href="#m6">selectCashOnDelivery</a></td><td rowspan="1">1775338733426</td><td rowspan="1">421</td></tr><tr class="passedeven"><td><a href="#m7">selectProduct</a></td><td rowspan="1">1775338725798</td><td rowspan="1">2443</td></tr><tr class="passedeven"><td><a href="#m8">verifyHomepageLoads</a></td><td rowspan="1">1775338724368</td><td rowspan="1">595</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.aurazone.aurazone_automations.EndToEndPurchaseTest#fillDeliveryAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a10525bc897889393c4fe79405add6e2, findElement {value=//input[contains(@placeholder,&apos;Enter your full name&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\Reehan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62178}, goog:processID: 46292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62178/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a10525bc897889393c4fe79405add6e2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:222)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:215)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.aurazone.aurazone_automations.EndToEndPurchaseTest.fillDeliveryAddress(EndToEndPurchaseTest.java:167)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.aurazone.aurazone_automations.EndToEndPurchaseTest#placeOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a10525bc897889393c4fe79405add6e2, findElement {value=//button[contains(text(),&apos;Place Order&apos;) or contains(text(),&apos;Confirm&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\Reehan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62178}, goog:processID: 46292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62178/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a10525bc897889393c4fe79405add6e2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.aurazone.aurazone_automations.EndToEndPurchaseTest.placeOrder(EndToEndPurchaseTest.java:241)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.aurazone.aurazone_automations.EndToEndPurchaseTest#proceedToCheckout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=146.0.7680.178)
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a10525bc897889393c4fe79405add6e2, findElement {value=//button[contains(text(),&apos;Checkout&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\Reehan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62178}, goog:processID: 46292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62178/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a10525bc897889393c4fe79405add6e2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.aurazone.aurazone_automations.EndToEndPurchaseTest.proceedToCheckout(EndToEndPurchaseTest.java:143)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.aurazone.aurazone_automations.EndToEndPurchaseTest#selectCashOnDelivery</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a10525bc897889393c4fe79405add6e2, findElement {value=//*[contains(text(),&apos;Cash&apos;) or contains(text(),&apos;COD&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\Reehan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62178}, goog:processID: 46292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62178/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a10525bc897889393c4fe79405add6e2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.aurazone.aurazone_automations.EndToEndPurchaseTest.selectCashOnDelivery(EndToEndPurchaseTest.java:225)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.aurazone.aurazone_automations.InvalidPriceFilterTest#test_InvalidPriceRange_FilterShouldNotApply</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Filter incorrectly applied with invalid price range expected [true] but found [false]
-	at com.aurazone.aurazone_automations.InvalidPriceFilterTest.test_InvalidPriceRange_FilterShouldNotApply(InvalidPriceFilterTest.java:69)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.aurazone.aurazone_automations.EndToEndPurchaseTest#addToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.aurazone.aurazone_automations.EndToEndPurchaseTest#goToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.aurazone.aurazone_automations.EndToEndPurchaseTest#navigateToProductsPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.aurazone.aurazone_automations.EndToEndPurchaseTest#selectProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.aurazone.aurazone_automations.EndToEndPurchaseTest#verifyHomepageLoads</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.aurazone.aurazone_automations.ForgotPasswordNegativeTest#testEmptyEmailForgotPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.aurazone.aurazone_automations.ForgotPasswordNegativeTest#testInvalidEmailForgotPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.aurazone.aurazone_automations.LoginTest#testLoginWithInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.aurazone.aurazone_automations.LoginTest#testLoginWithUnverifiedAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">com.aurazone.aurazone_automations.LoginTest#testLoginWithverifiedAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.aurazone.aurazone_automations.EndToEndPurchaseTest#addToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.aurazone.aurazone_automations.EndToEndPurchaseTest#fillDeliveryAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.aurazone.aurazone_automations.EndToEndPurchaseTest#goToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.aurazone.aurazone_automations.EndToEndPurchaseTest#navigateToProductsPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.aurazone.aurazone_automations.EndToEndPurchaseTest#placeOrder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.aurazone.aurazone_automations.EndToEndPurchaseTest#proceedToCheckout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.aurazone.aurazone_automations.EndToEndPurchaseTest#selectCashOnDelivery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.aurazone.aurazone_automations.EndToEndPurchaseTest#selectProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.aurazone.aurazone_automations.EndToEndPurchaseTest#verifyHomepageLoads</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

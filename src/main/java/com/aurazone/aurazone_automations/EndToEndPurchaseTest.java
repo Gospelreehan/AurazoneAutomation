@@ -138,25 +138,21 @@ public class EndToEndPurchaseTest {
 
     @Test(priority = 6)
     public void proceedToCheckout() throws InterruptedException {
-    	 Thread.sleep(4500);
+    	  WebElement checkoutButton = wait.until(
+    	            ExpectedConditions.elementToBeClickable(
+    	                    By.xpath("//button[contains(text(),'Checkout')]")));
 
-        WebElement checkoutBtn = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.xpath("//button[contains(text(),'Checkout')]")));
+    	    
+    	    checkoutButton.click();
 
-        js.executeScript("arguments[0].scrollIntoView(true);", checkoutBtn);
+    	    wait.until(ExpectedConditions.or(
+    	            ExpectedConditions.urlContains("checkout"),
+    	            ExpectedConditions.visibilityOfElementLocated(
+    	                    By.xpath("//input[contains(@placeholder," +
+    	                             "'Enter your full name')]"))
+    	    ));
 
-//        Thread.sleep(4500);
-
-        checkoutBtn.click();
-
-        wait.until(ExpectedConditions.or(
-                ExpectedConditions.urlContains("checkout"),
-                ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//input"))
-        ));
-
-        System.out.println("Checkout Page Loaded");
+    	    System.out.println("Checkout page loaded");
 
         takeScreenshot("06_CheckoutPage");
     }
